@@ -31,9 +31,9 @@ Currently the application works.  Would like to make some changes to the readme 
 
 HTML 5, CSS, JavaScript, React, Axios 
 
-## heroku
+## React App with Surge
 
-https://fast-beach-05660.herokuapp.com/
+http://wacky-comparison.surge.sh/
 
 
 ## Credits
