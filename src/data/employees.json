@@ -1,37 +1,66 @@
 [
 	{
 		"id": 1,
-		"employement year": "1983",
-		"first name": "Richard",
-		"last name": "Smith",
-		"position": "Developer"
+		"employmentYear": "1983",
+		"firstName": "Richard",
+		"lastName": "Smith",
+		"position": "Full-Stack Developer"
 	},
 	{
 		"id": 2,
-		"employemnt year": "1993",
-		"first name": "Mazda",
-		"last name": "Rx-7",
-		"position":
+		"employmentYear": "1993",
+		"firstName": "John",
+		"lastName": "Doe",
+		"position": "Full-Stack Developer"
 	},
 	{
 		"id": 3,
-		"employement year": "1984",
-		"first name": "Toyota",
-		"last name": "Celica",
-		"position":
+		"employmentYear": "1984",
+		"firstName": "Henry",
+		"lastName": "Celica",
+		"position": "Front-End Developer"
 	},
 	{
 		"id": 4,
-		"employment year": "2002",
-		"first name": "Ferrari",
-		"last name": "Modena",
-		"position":
+		"employmentYear": "2000",
+		"firstName": "Charles",
+		"lastName": "Modena",
+		"position": "Junior Full-Stack Developer"
 	},
 	{
 		"id": 5,
-		"employment year": "1975",
-		"first name": "AMC",
-		"last name": "Pacer",
-		"position":
+		"employmentYear": "2012",
+		"firstName": "Mark",
+		"lastName": "Pacer",
+		"position": "Back-End Developer"
+		
+	},
+	{
+		"id": 6,
+		"employmentYear": "2011",
+		"firstName": "Adam",
+		"lastName": "Doe",
+		"position": "Full-Stack Developer"
+	},
+	{
+		"id": 7,
+		"employmentYear": "2013",
+		"firstName": "Chase",
+		"lastName": "Bandit",
+		"position": "Data Scientist"
+	},
+	{
+		"id": 8,
+		"employmentYear": "2002",
+		"firstName": "Ferrari",
+		"lastName": "Dickson",
+		"position": "IT Security"
+	},
+	{
+		"id": 9,
+		"employmentYear": "1975",
+		"firstName": "Nick",
+		"lastName": "Peterson",
+		"position": "Network Engineer"
 	}
 ]

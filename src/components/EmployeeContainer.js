@@ -9,19 +9,36 @@ import EmployeeList from "../data/employees.json";
 class EmployeeContainer extends Component {
   state = {
     result: [],
-    search: "Richard"
+    search: "",
   };
 
   // When this component mounts, search for the movie "The Matrix"
   componentDidMount() {
-    this.searchEmployees();
+    this.setState({"result": EmployeeList });
   }
 
   searchEmployees = () => {
     const searchQuery = this.state.search.trim();
-    const searchResults = EmployeeList.filter((employee) => employee.first name === searchQuery);
-    this.setState({ 'result': searchResults });
+    console.log(searchQuery)
+    const searchResults = EmployeeList.filter((employee) => employee.firstName === searchQuery);
+    console.log(searchResults);         
+    this.setState({ 'result': searchResults.firstName });
   };
+
+  // sort = event => {
+  //   let employeeArr = this.state.result;
+  //   let employeeArr = [...this.state.result];
+  //   sort employeeArr
+  //   arr.sort((a,b)=>{
+  //     if () {
+  //       return -1;
+  //     }
+  //     if () {
+  //       return 1;
+  //     }
+  //   })
+  //   this.setState({result: employeeArr})
+  // }
 
   handleInputChange = event => {
     const value = event.target.value;
@@ -32,9 +49,12 @@ class EmployeeContainer extends Component {
   };
 
   // When the form is submitted, search the OMDB API for the value of `this.state.search`
-  handleFormSubmit = event => {
+  Developer = event => {
     event.preventDefault();
-    this.searchEmployees();
+  
+    this.setState({
+      search: 'developer'
+    });
   };
 
   render() {
@@ -49,6 +69,8 @@ class EmployeeContainer extends Component {
               handleInputChange={this.handleInputChange}
               handleFormSubmit={this.handleFormSubmit}
             />
+            
+            <button onClick={this.Developer}>SORT Developer</button>
           </Col>
           <Col size="md-4" />
         </Row>
@@ -61,6 +83,6 @@ class EmployeeContainer extends Component {
       </Container >
     );
   }
-}
+ }
 
 export default EmployeeContainer;
