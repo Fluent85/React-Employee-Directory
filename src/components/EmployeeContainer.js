@@ -57,6 +57,14 @@ class EmployeeContainer extends Component {
     });
   };
 
+  // Security = event => {
+  //   event.preventDefault();
+  
+  //   this.setState({
+  //     search: 'security'
+  //   });
+  // };
+
   render() {
     return (
       <Container>
@@ -76,6 +84,12 @@ class EmployeeContainer extends Component {
         </Row>
         <Row>
           <Col size="md-12">
+          {/* <button onClick={this.Developer}>SORT Security</button>
+          </Col>
+          <Col size="md-4" />
+        </Row>
+        <Row>
+          <Col size="md-12"> */}
             <hr />
             <EmployeeInfo search={this.state.search} />
           </Col>

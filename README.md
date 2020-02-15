@@ -20,7 +20,7 @@ The user should be able to:
 
   * Sort the table by at least one category.
 
-  * Filter the users by at Devloper property.
+  * Filter the users by Developer property.
 
 ## Issues and future development
 
@@ -32,6 +32,8 @@ Currently the application works.  Would like to make some changes to the readme 
 HTML 5, CSS, JavaScript, React, Axios 
 
 ## React App with Surge
+
+This website is not secure!!!
 
 http://wacky-comparison.surge.sh/
 
