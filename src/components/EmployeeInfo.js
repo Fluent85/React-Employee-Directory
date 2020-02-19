@@ -1,10 +1,10 @@
 import React from "react";
-import EmployeeList from "../data/employees.json";
+//import EmployeeList from "../data/employees.json";
 
 function EmployeeInfo(props) {
   console.log(props)
 
-  const results = EmployeeList.filter(employee => 
+  const results = props.EmployeeList.filter(employee => 
     employee.firstName.toLowerCase().includes(props.search.toLowerCase()) 
   || employee.lastName.toLowerCase().includes(props.search.toLowerCase())
   || employee.position.toLowerCase().includes(props.search.toLowerCase())

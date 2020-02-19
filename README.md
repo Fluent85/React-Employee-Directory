@@ -24,7 +24,7 @@ The user should be able to:
 
 ## Issues and future development
 
-Currently the application works.  Would like to make some changes to the readme file, add a short video and some snapshot images.  I also would like to add some more sort features.  I would also like to add some CSS.
+Currently the application works.  Would like to make some changes to the readme file, add a short video and some snapshot images.  I currently have a sort button for Developer but would like to add a few more sort features.  I would also like to add CSS to make the application more appealing for UX purposes.
 
 
 ## Technologies Implemented
@@ -33,7 +33,7 @@ HTML 5, CSS, JavaScript, React, Axios
 
 ## React App with Surge
 
-This website is not secure!!!
+THIS WEBSITE IS NOT SECURE!!!!!
 
 http://wacky-comparison.surge.sh/
 

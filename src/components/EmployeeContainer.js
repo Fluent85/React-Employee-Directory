@@ -25,20 +25,21 @@ class EmployeeContainer extends Component {
     this.setState({ 'result': searchResults.firstName });
   };
 
-  // sort = event => {
-  //   let employeeArr = this.state.result;
-  //   let employeeArr = [...this.state.result];
-  //   sort employeeArr
-  //   arr.sort((a,b)=>{
-  //     if () {
-  //       return -1;
-  //     }
-  //     if () {
-  //       return 1;
-  //     }
-  //   })
-  //   this.setState({result: employeeArr})
-  // }
+  sort = event => {
+    event.preventDefault();
+    // let employeeArr = this.state.result;
+    let employeeArr = [...this.state.result];
+    //sort employeeArr
+    employeeArr.sort((emp1, emp2)=>{
+      if (emp1.position > emp2.position) {
+        return 1;
+      }
+      if (emp1.position < emp2.position) {
+        return -1;
+      }
+    })
+    this.setState({result: employeeArr})
+  }
 
   handleInputChange = event => {
     const value = event.target.value;
@@ -78,7 +79,7 @@ class EmployeeContainer extends Component {
               handleFormSubmit={this.handleFormSubmit}
             />
             
-            <button onClick={this.Developer}>SORT Developer</button>
+            <button onClick={this.sort} className="btn btn-primary">SORT Developer</button>
           </Col>
           <Col size="md-4" />
         </Row>
@@ -91,7 +92,7 @@ class EmployeeContainer extends Component {
         <Row>
           <Col size="md-12"> */}
             <hr />
-            <EmployeeInfo search={this.state.search} />
+            <EmployeeInfo search={this.state.search} EmployeeList={this.state.result}/>
           </Col>
         </Row>
       </Container >
